@@ -24,6 +24,6 @@
     "postcss": "^5.0.21"
   },
   "devDependencies": {
-    "ava": "^0.15.2"
+    "ava": "^0.16.0"
   }
 }
