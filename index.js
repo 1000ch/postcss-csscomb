@@ -1,24 +1,21 @@
 'use strict';
 
 const postcss = require('postcss');
-const CSScomb = require('csscomb');
+const csscomb = require('csscomb');
 
-const postcssCSScomb = postcss.plugin('postcss-csscomb', function(options) {
+module.exports = postcss.plugin('postcss-csscomb', options => {
   let optionType = typeof options;
   if (optionType !== 'object' && optionType !== 'string') {
     options = {};
   }
 
-  let csscomb = new CSScomb(options);
-
-  return function(root, result) {
-    let sorted = csscomb.processString(root.source.input.css);
+  return (root, result) => {
+    let css = root.source.input.css;
+    let sorted = new csscomb(options).processString(css);
     result.root = postcss.parse(sorted);
   };
 });
 
-postcssCSScomb.process = function(css, options) {
-  return postcss([postcssCSScomb(options)]).process(css);
-};
-
-module.exports = postcssCSScomb;
+module.exports.process = (css, options) => postcss([
+  module.exports(options)
+]).process(css);
