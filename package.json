@@ -2,28 +2,42 @@
   "name": "postcss-csscomb",
   "version": "1.0.2",
   "description": "PostCSS plugin to apply CSScomb",
-  "main": "index.js",
-  "scripts": {
-    "test": "ava"
-  },
-  "repository": "1000ch/postcss-csscomb",
   "keywords": [
     "css",
     "csscomb",
     "postcss",
     "postcss-plugin"
   ],
-  "author": "1000ch",
-  "license": "MIT",
+  "homepage": "https://github.com/1000ch/postcss-csscomb#readme",
   "bugs": {
     "url": "https://github.com/1000ch/postcss-csscomb/issues"
   },
-  "homepage": "https://github.com/1000ch/postcss-csscomb#readme",
+  "repository": "1000ch/postcss-csscomb",
+  "license": "MIT",
+  "author": {
+    "name": "Shogo Sensui",
+    "email": "shogosensui@gmail.com",
+    "url": "https://github.com/1000ch"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "xo": {
+    "space": 2
+  },
   "dependencies": {
-    "csscomb": "^3.1.8",
-    "postcss": "^5.0.21"
+    "csscomb": "^4.3.0"
   },
   "devDependencies": {
-    "ava": "^3.11.1"
+    "ava": "^3.11.1",
+    "postcss": "^7.0.32",
+    "xo": "^0.33.0"
+  },
+  "peerDependencies": {
+    "postcss": "^7.0.32"
+  },
+  "engines": {
+    "node": ">=12"
   }
 }

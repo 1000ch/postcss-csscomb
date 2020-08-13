@@ -14,7 +14,7 @@ npm install --save-dev postcss-csscomb
 const postcss = require('postcss');
 const csscomb = require('postcss-csscomb');
 
-let css = `.foo {
+const css = `.foo {
   color: red;
   display: block;
 }`;
@@ -31,9 +31,10 @@ postcss([csscomb('zen')])
   });
 
 // pass an config as object
-let option = {
+const option = {
   'sort-order': ['display', 'color']
 };
+
 postcss([csscomb(option)])
   .process(css)
   .then(result => {
@@ -47,4 +48,4 @@ postcss([csscomb(option)])
 
 ## License
 
-MIT: http://1000ch.mit-license.org/
+[MIT](https://1000ch.mit-license.org) © [Shogo Sensui](https://github.com/1000ch)
