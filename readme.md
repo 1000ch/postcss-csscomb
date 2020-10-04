@@ -5,7 +5,7 @@
 ## Install
 
 ```sh
-npm install --save-dev postcss-csscomb
+npm install --save-dev postcss postcss-csscomb
 ```
 
 ## Usage
