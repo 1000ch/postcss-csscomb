@@ -31,11 +31,11 @@
   },
   "devDependencies": {
     "ava": "^3.11.1",
-    "postcss": "^7.0.32",
+    "postcss": "^8.1.1",
     "xo": "^0.33.0"
   },
   "peerDependencies": {
-    "postcss": "^7.0.32"
+    "postcss": "^8.1.1"
   },
   "engines": {
     "node": ">=12"
