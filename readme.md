@@ -1,4 +1,4 @@
-# postcss-csscomb [![Build Status](https://travis-ci.org/1000ch/postcss-csscomb.svg?branch=master)](https://travis-ci.org/1000ch/postcss-csscomb)
+# postcss-csscomb ![GitHub Actions Status](https://github.com/1000ch/postcss-csscomb/workflows/test/badge.svg?branch=master)
 
 [PostCSS](https://github.com/postcss/postcss) plugin to apply [CSScomb](https://github.com/csscomb/csscomb.js).
 
