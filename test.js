@@ -1,7 +1,6 @@
-'use strict';
-const test = require('ava');
-const postcss = require('postcss');
-const csscomb = require('..');
+import test from 'ava';
+import postcss from 'postcss';
+import csscomb from './index.js';
 
 const original = `.foo {
   color: red;

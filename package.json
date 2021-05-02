@@ -19,7 +19,7 @@
     "email": "shogosensui@gmail.com",
     "url": "https://github.com/1000ch"
   },
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "xo && ava"
   },

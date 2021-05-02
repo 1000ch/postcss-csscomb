@@ -1,8 +1,7 @@
-'use strict';
-const postcss = require('postcss');
-const CSSComb = require('csscomb');
+import {parse} from 'postcss';
+import CSSComb from 'csscomb';
 
-module.exports = (options = {}) => {
+export default function csscomb(options = {}) {
   const optionType = typeof options;
   if (optionType !== 'object' && optionType !== 'string') {
     options = {};
@@ -14,9 +13,9 @@ module.exports = (options = {}) => {
       const {css} = root.source.input;
       const csscomb = new CSSComb(options);
       const sorted = await csscomb.processString(css);
-      result.root = postcss.parse(sorted);
+      result.root = parse(sorted);
     }
   };
-};
+}
 
-module.exports.postcss = true;
+export const postcss = true;
