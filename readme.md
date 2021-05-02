@@ -11,8 +11,8 @@ npm install --save-dev postcss postcss-csscomb
 ## Usage
 
 ```javascript
-const postcss = require('postcss');
-const csscomb = require('postcss-csscomb');
+import postcss from 'postcss';
+import csscomb from 'postcss-csscomb';
 
 const css = `.foo {
   color: red;
