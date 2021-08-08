@@ -14,7 +14,7 @@ export default function csscomb(options = {}) {
       const csscomb = new CSSComb(options);
       const sorted = await csscomb.processString(css);
       result.root = parse(sorted);
-    }
+    },
   };
 }
 
