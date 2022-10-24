@@ -33,7 +33,7 @@
     "csscomb": "^4.3.0"
   },
   "devDependencies": {
-    "ava": "^3.15.0",
+    "ava": "^5.0.1",
     "postcss": "^8.3.0",
     "xo": "^0.44.0"
   },
